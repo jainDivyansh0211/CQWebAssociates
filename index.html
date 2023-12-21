@@ -92,7 +92,12 @@
       .social_handles{
         margin-left: 10px;
         margin-right: 10px;
-        justify-self: end;
+        float: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+
+
       }
     </style>
   </head>
@@ -147,7 +152,9 @@
     <footer>
       <div class="b_row">
         <a href="http://www.cqiitkgp.com/" class="button">Official Website of Communiqué</a>
-        <a href="facebook" class="button social_handles">Facebook</a>        
+        <div class="social_handles">
+        <a href="facebook" class="button">Facebook</a>    
+      </div>    
       </div>
     </footer>
   </body>
