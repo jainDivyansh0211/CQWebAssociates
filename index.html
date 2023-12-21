@@ -7,6 +7,8 @@
       body {
         color: white;
         background-image: url("background2.webp");
+        background-repeat: repeat-y;
+        background-size: 100%;
       }
       .images {
         height: 200px;
@@ -70,9 +72,33 @@
       .one-liner {
         font-weight: bold;
       }
+      .heading{
+        font-weight: bold;
+        font-size: 72px;
+        text-align: center;
+        background-color: white;
+        width: fit-content;
+        color: rgb(29, 28, 28);
+      }
+      .b_row{
+        height:max-content;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-image: url("background.webp");
+        align-items:flex-end;
+      }
+      .social_handles{
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-self: end;
+      }
     </style>
   </head>
   <body>
+    <center><h1 class="heading">My 3 Favourite Places in IIT Kharagpur
+    </h1></center>
     <div class="line1">
       <div class="box">
         <img src="gymkhana.jpg" alt="" class="images" />
@@ -86,7 +112,7 @@
           with friends, making it a favorite among everyone.
         </p>
         <center>
-          <a href="https://www.google.com/" class="button"
+          <a href="https://gymkhana.iitkgp.ac.in/" class="button" target="_blank"
             >Click here to visit Gymkhana website</a
           >
         </center>
@@ -100,7 +126,7 @@
           <p class="content">
             Nehru Museum at IIT Kharagpur is a perfect hangout for friends, offering a relaxed atmosphere where you can enjoy interesting exhibits and spend quality time together, making memories outside of classes.</p>
         <center>
-          <a href="https://www.google.com/" class="button">Read more</a>
+          <a href="https://www.nehrumuseumiitkgp.org/" class="button" target="_blank">Visit website of Nehru Museum</a>
         </center>
       </p>
       </div>
@@ -113,9 +139,16 @@
           Kalidas Auditorium is famous for its vibrant events, lively performances, and a welcoming ambiance. It's the go-to place for entertainment, fostering a sense of community and shared experiences among the student body.
         </p><br>
         <center>
-          <a href="" class="button" target="_blank">Know more about Kalidas Auditorium</a>
+          <a href="https://wiki.metakgp.org/w/Vikramshila" class="button" target="_blank">Know more about Kalidas Auditorium</a>
         </center>
       </div>
-    </div>
+    </div><br>
+
+    <footer>
+      <div class="b_row">
+        <a href="http://www.cqiitkgp.com/" class="button">Official Website of Communiqué</a>
+        <a href="facebook" class="button social_handles">Facebook</a>        
+      </div>
+    </footer>
   </body>
 </html>
